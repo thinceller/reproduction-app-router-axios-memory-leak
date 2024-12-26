@@ -6,12 +6,13 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "start": "next start",
+    "start": "PORT=3001 NODE_OPTIONS='--inspect' next start",
     "lint": "next lint --max-warnings 0",
     "check-types": "tsc --noEmit"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
+    "axios": "1.7.9",
     "next": "^15.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
